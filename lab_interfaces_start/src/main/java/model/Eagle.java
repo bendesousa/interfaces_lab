@@ -11,8 +11,8 @@ public class Eagle  implements IFly, IHunt {
         System.out.println("Eagle is flying");
     }
 
-   // @Override
+   @Override
     public void hunt() {
-        System.out.println("Eagle is flying");
+        System.out.println("Eagle is hunting");
     }
 }

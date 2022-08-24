@@ -1,5 +1,6 @@
 package model;
 
+import model.interfaces.IAnimal;
 import model.interfaces.ISwim;
 import model.interfaces.IHunt;
 import model.interfaces.IRun;

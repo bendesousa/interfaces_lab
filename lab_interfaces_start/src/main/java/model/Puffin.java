@@ -1,6 +1,8 @@
 package model;
 
+import model.interfaces.IAnimal;
 import model.interfaces.IFly;
+import model.interfaces.IPrey;
 import model.interfaces.ISwim;
 
 public class Puffin implements IAnimal, IFly, ISwim, IPrey {
@@ -11,7 +13,7 @@ public class Puffin implements IAnimal, IFly, ISwim, IPrey {
 
     @Override
     public void sleep() {
-        System.out.println("Puffin is eating");
+        System.out.println("Puffin is sleeping");
     }
 
     @Override
@@ -26,6 +28,6 @@ public class Puffin implements IAnimal, IFly, ISwim, IPrey {
 
     @Override
     public void flee() {
-        System.out.println("Puffin is fleeing from preditor");
+        System.out.println("Puffin is fleeing from predator");
     }
 }

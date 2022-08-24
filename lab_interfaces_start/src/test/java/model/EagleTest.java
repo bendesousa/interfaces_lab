@@ -1,5 +1,6 @@
 package model;
 
+import model.interfaces.IAnimal;
 import model.interfaces.IFly;
 import model.interfaces.IHunt;
 

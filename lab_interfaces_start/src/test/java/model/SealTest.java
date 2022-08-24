@@ -1,5 +1,7 @@
 package model;
 
+import model.interfaces.IAnimal;
+import model.interfaces.IPrey;
 import model.interfaces.ISwim;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

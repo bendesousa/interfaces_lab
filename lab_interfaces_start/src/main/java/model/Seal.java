@@ -1,5 +1,6 @@
 package model;
 
+import model.interfaces.IAnimal;
 import model.interfaces.ISwim;
 import model.interfaces.IPrey;
 public class Seal implements IAnimal, ISwim, IPrey {
