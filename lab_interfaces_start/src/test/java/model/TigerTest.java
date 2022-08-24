@@ -13,6 +13,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class TigerTest {
     public Tiger tiger;
     public Class<?> tigerClass;
+    private Class<Object> tigerclass;
 
     @BeforeEach
     public void setUp(){
@@ -60,5 +61,11 @@ public class TigerTest {
     @Test
     public void canSwim() throws NoSuchMethodException {
         assertThat(tigerClass.getMethod("swim")).isNotNull();
+    }
+
+    @Test
+    public void canHunt() throws NoSuchMethodException {
+    assertThat(tigerClass.getMethod("hunt")).isNotNull();
+
     }
 }

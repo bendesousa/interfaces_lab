@@ -51,4 +51,10 @@ public class EagleTest {
     public void canFly() throws NoSuchMethodException {
         assertThat(eagleClass.getMethod("fly")).isNotNull();
     }
+
+    @Test
+    public void canHunt() throws NoSuchMethodException {
+    assertThat(eagleClass.getMethod("hunt")).isNotNull();
+    }
+    
 }

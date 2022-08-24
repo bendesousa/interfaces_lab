@@ -3,6 +3,7 @@ package model;
 import model.interfaces.IAnimal;
 import model.interfaces.IFly;
 import model.interfaces.IPrey;
+import model.interfaces.ISwim;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -35,6 +36,13 @@ public class PuffinTest {
     }
 
     @Test
+    public void implementsISwim() {
+        assertThat(ISwim.class.isAssignableFrom(puffinClass)).isTrue();
+    }
+
+
+
+    @Test
     public void canEat() throws NoSuchMethodException {
         assertThat(puffinClass.getMethod("eat")).isNotNull();
     }
@@ -53,4 +61,11 @@ public class PuffinTest {
     public void canFlee() throws NoSuchMethodException {
         assertThat(puffinClass.getMethod("flee")).isNotNull();
     }
-}
+
+    @Test
+    public void canSwim() throws NoSuchMethodException {
+    assertThat(puffinClass.getMethod("swim")).isNotNull();
+
+    }
+
+    }
